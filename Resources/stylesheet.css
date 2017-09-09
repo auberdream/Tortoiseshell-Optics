@@ -6,6 +6,10 @@ html {
   font-family: Helvetica;
 }
 
+body {
+  margin: 0;
+}
+
 .flex {
   display: flex;
 }
@@ -42,6 +46,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
 }
 
 .header {
@@ -99,11 +104,65 @@ ul li {
   height: 8rem;
 }
 
-.item img {
+.papericon {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.rulericon {
   width: 5rem;
   margin-bottom: 1rem;
 }
 
- .item img .papericon {
-   width: 3.5rem;
- }
+.truckicon {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+/*content*/
+
+.textcontent {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+h5 {
+  background-color: cadetblue;
+  margin-top: 3rem;
+  width: 10rem;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/*footer*/
+
+footer {
+  background-color: azure;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.footertext {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer img {
+  padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
+}
