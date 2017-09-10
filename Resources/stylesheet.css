@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -72,13 +72,17 @@ ul li {
   display: inline;
 }
 
+.shortmenu {
+  display: none;
+}
+
 /*banner text*/
 
 .banner .flex {
   justify-content: flex-end;
 }
 
-.flex h1 {
+.mainbanner {
   padding: 1.5rem 5rem;
   background-color: white;
   margin-top: 10rem;
@@ -165,4 +169,96 @@ footer {
 footer img {
   padding: 4rem 1rem 4rem 4rem;
   height: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner .container {
+    width: 100%;
+  }
+
+  nav {
+    position: fixed;
+  }
+
+  .banner {
+    padding-top: 0;
+  }
+
+  .mainbanner {
+    margin-top: 12.5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 560px) {
+  .menu {
+    display: none;
+  }
+
+  .header span {
+    display: none;
+  }
+
+  .shortmenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .banner {
+    height: 19rem;
+    background-position: 20%;
+  }
+
+  .mainbanner {
+    margin-top: 12rem;
+    text-align: center;
+    width: 100%;
+    margin-right: 0rem;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .contentcontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+
+  .textcontent {
+    flex-direction: column;
+  }
+
+  h5 {
+  width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footertext span {
+    display: none;
+  }
+
+  .footertext {
+    justify-content: center;
+  }
 }
